@@ -14,7 +14,7 @@ namespace WebDataGathering.Controllers
         // GET: DataScrape
         public ActionResult Index()
         {
-            return View();
+            return View(db.DataModels.ToList());
         }
 
         // GET: DataScrape/Details/5

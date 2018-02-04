@@ -9,6 +9,9 @@ namespace WebDataGathering.Context
 {
     public class DataScrapeContext: DbContext
     {
+        public DataScrapeContext() : base()
+        {
+        }
 
         public DbSet<DataModel> DataModels { get; set; }
     }
