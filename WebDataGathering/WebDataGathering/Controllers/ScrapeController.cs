@@ -10,11 +10,11 @@ namespace WebDataGathering.Controllers
     public class ScrapeController : Controller
     {
         // GET: Scrape
-        public ActionResult Index()
+        public RedirectToRouteResult Index()
         {
           DataScrape.StartScraper();
             //return View(ScrapeIndex);
-            return Redirect(ScrapeIndex);
+            return RedirectToRoute("~/DataScrape/ScrapeIndex");
         }
     }
 }
